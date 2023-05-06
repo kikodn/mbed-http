@@ -1,6 +1,6 @@
-# HTTP and HTTPS library for mbed OS 5
+# HTTP and HTTPS library for Mbed OS 6
 
-This library is used to make HTTP and HTTPS calls from Mbed OS 5 applications.
+This library is used to make HTTP and HTTPS calls from Mbed OS 6 applications.
 
 ## HTTP Request API
 
@@ -147,10 +147,6 @@ printf("\n");
 
 Integration tests are located in the `TESTS` folder and are ran through [Greentea](https://github.com/ARMmbed/greentea). Instructions on how to run the tests are in [http-example](https://os.mbed.com/teams/sandbox/code/http-example/).
 
-## Mbed OS 5.10 or lower
-
-If you want to use this library on Mbed OS 5.10 or lower, you need to add the [TLSSocket](https://github.com/ARMmbed/TLSSocket) library to your project. This library is included in Mbed OS 5.11 and up.
-
 ## Tested on
 
 * K64F with Ethernet.
@@ -160,4 +156,4 @@ If you want to use this library on Mbed OS 5.10 or lower, you need to add the [T
 * DISCO-L475VG-IOT01A with WiFi.
 * [Mbed Simulator](https://github.com/janjongboom/mbed-simulator).
 
-But this should work with any Mbed OS 5 device that implements the `NetworkInterface` API.
+But this should work with any Mbed OS 6 device that implements the `NetworkInterface` API.

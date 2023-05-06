@@ -21,6 +21,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include "SocketAddress.h"
 #include "http_request_base.h"
 #include "TLSSocket.h"
 
@@ -91,7 +92,7 @@ public:
 
 protected:
     virtual nsapi_error_t connect_socket(char *host, uint16_t port) {
-        return ((TLSSocket*)_socket)->connect(host, port);
+        return ((TLSSocket*)_socket)->connect(SocketAddress(host, port));
     }
 };
 

@@ -93,7 +93,7 @@ public:
 protected:
 
     virtual nsapi_error_t connect_socket(char *host, uint16_t port) {
-        return ((TCPSocket*)_socket)->connect(host, port);
+        return ((TLSSocket*)_socket)->connect(SocketAddress(host, port));
     }
 };
 
